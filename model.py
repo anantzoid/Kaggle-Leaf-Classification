@@ -158,6 +158,7 @@ def model1():
     return model
 
 '''
+# Didn't give good results
 def model2(train, test, encoded_images):
     encoded_images = encoded_images.reshape(encoded_images.shape[0], -1)
     train = np.concatenate((train, encoded_images[:train.shape[0],:]), axis=1)
